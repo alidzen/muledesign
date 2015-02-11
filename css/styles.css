@@ -123,7 +123,10 @@ body {
 
 .header_nav li a:hover {
     display: block; 
+    -webkit-transform: translateY(-3px); 
+    -ms-transform: translateY(-3px); 
     transform: translateY(-3px);
+    -webkit-transition: 0.1s;
     transition: 0.1s;
     color: #3e2813;
 }
@@ -187,16 +190,19 @@ article img {
 /*associate radio buttons with the movement of the slide*/
 #slide1:checked ~ #slides .inner {
     margin-left: 0;
+    -webkit-transition: .8s;
     transition: .8s;
 }
 
 #slide2:checked ~ #slides .inner {
     margin-left: -100%;
+    -webkit-transition: .8s;
     transition: .8s;
 }
 
 #slide3:checked ~ #slides .inner {
     margin-left: -200%;
+    -webkit-transition: .8s;
     transition: .8s;
 }
 
@@ -241,6 +247,7 @@ article img {
 #active label:hover {
     background-color: rgba(255, 255, 255, .7);
     box-shadow: inset 0 0 5px 2px #5b4631;
+    -webkit-transition: .8s;
     transition: .8s;
 }    
 
@@ -270,6 +277,7 @@ article img {
 #slide3:checked ~ #slides #active label:nth-child(3) {
     background-color: rgba(255, 255, 255, .7);
     box-shadow: inset 0 0 3px 2px #5b4631;
+    -webkit-transition: .6s;
     transition: .6s;
 }
     
@@ -555,6 +563,7 @@ footer a {
 
 footer a:hover {
     color: #da6a00;
+    -webkit-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
 }
 
@@ -703,20 +712,21 @@ footer h2 {
     
     .ft_content_book,
     .ft_content_form_to_discuss {
-        float: none;
         width: auto;
         display: block;
     }
     
     .ft_content_book {
         margin-right: 5px;
+        clear: both;
     }
     
-    .ft_content_form_to_discuss:after {
-        content: "";
+    .ft_content_book:after {
         clear: both;
         display: table;
+        content: "";
     }
+    
 }
 
 /*________________End footer content_____________________ */
@@ -767,7 +777,13 @@ footer h2 {
 
 .follow a:hover {
     background: url("/img/ft-follow.png") no-repeat 0 -23px;
+    -webkit-transition: none 0s;
     transition: none 0s;
+}
+
+.copywrite {
+    display: block;
+    clear: both;
 }
 
 @media screen and (max-width: 768px) {
@@ -799,7 +815,7 @@ footer h2 {
         display: table;
     }
     
-    .copywtite {
+    .copywrite {
         text-align: center;
     }
 }
