@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title></title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="center_wrapper">
+            <h1 class="logo">
+                <a href="#">Mule</a>
+            </h1>
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Hire Us</a></li>
+                </ul>
+            </nav>
+        </div><!--/center_wr-->
+    </header>
+    <main>
+        <!--slider_setup-->
+        <input type="radio" id="slide1" name="toggle" checked>
+        <input type="radio" id="slide2" name="toggle">
+        <input type="radio" id="slide3" name="toggle">
+        <input type="radio" id="slide4" name="toggle">
+        
+<!--------------------The_slider----------------------------->
+    
+    <div id="slides">
+        <div id="overflow">
+            <div class="inner">
+                <article>
+                    <div class="slide_info">
+                        <h3><a href="#">Knowledge&#64;Wharton</a></h3>
+                        <p>Working closely with an internal team, we modernized an esteemed online journal of business news and analysis, creating a seamless, flexible system in a modern design</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <img src="img/home-wharton.jpg" alt="Winston Shurchill">
+                </article>    
+                
+                <article>
+                    <div class="slide_info">
+                        <h3><a href="#">Open Society Foundation</a></h3>
+                        <p>Our work with the Open Society Foundation was a tremendous opportunity and honor. We work alongside a dedicated team to create a coherent, vibrant system that connects the somatimes abstract work of a distributed organization to the lives of real people </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                     <img src="img/home-osf.jpg" alt="Some people together">
+                </article>
+                
+                <article>
+                    <div class="slide_info">
+                        <h3><a href="#">John S. Knight Journalism Fellowships at Stranford</a></h3>
+                        <p>Radical changes are sweeping through the field of journalism. In response. the respested program reinvented itself to foster innovation. We created a new brand and website to supprot their work invisioning the future</p>
+                        <a href="#">Learn More</a>
+                </div>
+                     <img src="img/home-knight.jpg" alt="Men writing on the board">
+                </article>
+                <article>
+                    <div class="slide_info">
+                        <h3><a href="#">National Audubon Society</a></h3>
+                        <p>For over 100 years the National Audubon Society has observed and conserved birds and their habitats. Now they have released their most ambitions project yet, The Climate Report</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <img src="img/home-audubon.jpg" alt="Big Duck">
+                </article>
+            </div><!--/inner-->
+            <div id="controls">
+            
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+    </div><!--/slider_controls-->
+    
+    <div id="active">
+			<label for="slide1"></label>
+			<label for="slide2"></label>
+			<label for="slide3"></label>
+			<label for="slide4"></label>
+    </div><!--slide_active-->
+            
+        </div><!--/overflow-->
+    </div><!--/slides-->
+    
+    <!--Controls_and_Active_Slide_Display-->
+    
+    
+</main>
+    
+</body>
+</html>
