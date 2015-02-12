@@ -772,11 +772,11 @@ footer h2 {
     height: 25px;
     margin-right: 4.761904762%; /* 20px / 420px */
     text-indent: 100%;
-    background: url("/img/ft-follow.png") no-repeat;
+    background: url("../img/ft-follow.png") no-repeat;
 }
 
 .follow a:hover {
-    background: url("/img/ft-follow.png") no-repeat 0 -23px;
+    background: url("../img/ft-follow.png") no-repeat 0 -23px;
     -webkit-transition: none 0s;
     transition: none 0s;
 }
