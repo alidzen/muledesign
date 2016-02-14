@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Test-main page Muledesign</title>
+    <style>
+        @font-face {
+            font-family: "PTSansNarrowRegular";
+            src: url("fonts/ptn57f.eot");
+            src: url("fonts/ptn57f.eot?#iefix") format("embedded-    opentype"),
+            url("fonts/ptn57f.woff") format("woff"),
+            url("fonts/ptn57f.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="center_wrapper">
+            <h1 class="logo">
+                <a href="#">Mule</a>
+            </h1>
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Hire Us</a></li>
+                </ul>
+            </nav>
+        </div><!--/center_wr-->
+    </header>
+    <div class="center_wrapper_slider"> <!--slider is widther than other content-->
+        <!--slider_setup-->
+        <input type="radio" id="slide1" name="toggle" checked>
+        <input type="radio" id="slide2" name="toggle">
+        <input type="radio" id="slide3" name="toggle">
+        
+<!--------------------The_slider----------------------------->
+    
+    <div id="slides">
+        <div id="overflow">
+            <div class="inner">
+                <article>
+                    <div class="slide_info">
+                        <h3><a href="#">Knowledge &#64; Wharton</a></h3>
+                        <p>Working closely with an internal team, we modernized an esteemed online journal of business news and analysis, creating a seamless, flexible system in a modern design</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <img src="img/home-wharton.jpg" alt="Winston Shurchill">
+                </article>    
+                
+                <article>
+                    <div class="slide_info">
+                        <h3><a href="#">Open Society Foundation</a></h3>
+                        <p>Our work with the Open Society Foundation was a tremendous opportunity and honor. We work alongside a dedicated team to create a coherent, vibrant system that connects the somatimes abstract work of a distributed organization to the lives of real people </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                     <img src="img/home-osf.jpg" alt="Some people together">
+                </article>
+                <article>
+                    <div class="slide_info">
+                        <h3><a href="#">National Audubon Society</a></h3>
+                        <p>For over 100 years the National Audubon Society has observed and conserved birds and their habitats. Now they have released their most ambitions project yet, The Climate Report</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <img src="img/home-audubon.jpg" alt="Big Duck">
+                </article>
+            </div><!--/inner-->
+            <div id="controls">
+            
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div><!--/slider_controls-->
+    
+            <div id="active">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div><!--slide_active-->
+            
+        </div><!--/overflow-->
+    </div><!--/slides-->
+    
+    <!--Controls_and_Active_Slide_Display-->
+    
+    </div><!--/center_wrapper_slider-->
+    
+<!--________________________End Slider_______________________-->
+    
+    
+<!--________________________main block_______________________-->
+    
+    <main>
+    <div class="center_wrapper">
+        <article class="info">
+            <section class="info_about_us">
+                <h2>We Are Design Studio</h2>
+                <p>We do our best work to create better experiences
+for real people. We’re passionate about design,
+alert to context, and focused on results.</p>
+                <a href="#">Yes, You Should Hire Us</a><br>
+            </section>
+            <section class="info_other">
+                <span>Featured Blog Post</span>
+                 <h3><a href="#">Things You Need To Do Before Hiring A Designer</a></h3>
+                <p>Bringing any employee into an unprepared environment where they don’t have the tools or authority to succeed is unfair to them and a huge waste of your hard-earned money.</p>
+                <span>We're Hiring</span>
+                <h3><a href="#">Content Strategist, Web Designer</a></h3>
+                <p>Never a dull moment. Always an opportunity to have a huge effect</p> 
+            </section>
+        </article> <!--/info-->
+    </div><!--/center wrapper-->
+</main>
+<footer>
+    <div class="center_wrapper">
+        <div class="ft_content">
+            <section class="ft_content_book">
+                <h2>Order The Book: Just Enough Research</h2>
+                <p><img height="192" width="124" alt="Just Enough Research by Erika Hall" src="img/footer_book.png">Research generates invaluable design ideas and reduces risk, yet it has a stodgy reputation. This slender volume offers an easy entry point into the most useful research principles and practices for everyone busy doing other things</p>
+                <p><em>Just Enough Research</em> is available now. For more information or to get your copy, visit <a href="#">A Book Apart</a>.</p>
+                <a class="buy_btn" href="#">Buy the book</a>
+            </section>
+            <section class="ft_content_form_to_discuss">
+                <h2>Ready To Discuss Your Project?</h2>
+                <div class="contact">
+                    <p>We’re more than happy to get to know you and find out if we’re a good fit for each other.</p>
+                    <p><a href="#">info@muledesign.com</a><br> 209 9th Street #300<br> San Francisco, California 94103<br>
+(415) 543.2789<br><a href="#">map it</a></p>
+                </div><!--/contact-->
+                <form action="/echo" method="post">
+                    <input type="login" name="login" required placeholder="Enter Your Name">
+                    <input type="email" name="email" required placeholder="Enter Your Email" pattern="@">
+                    <textarea name="message" rows="3" required placeholder="Talk To Us..."></textarea>
+                    <span>To help us prevent spam, please enter the letter <strong>J</strong> in this field:</span>
+                    <input type="text" name="antispam" id="antispam" required pattern="[Jj]{1}">
+                    <input type="submit" value="Contact Us"
+                </form>
+            </section><!--/ft_content_form_to_discuss-->
+        </div><!--/content-->
+        <section class="footer_other">
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href=#>Who We Are</a></li>
+                    <li><a href=#>WhatWe Do</a></li>
+                    <li><a href=#>Our Work</a></li>
+                    <li><a href=#>Our Blog</a></li>
+                    <li><a href=#>Hire Us</a></li>
+                </ul>
+                <ul>
+                    <li><strong>Our Other Stuff:</strong><a href=#> Mule Radio Syndicate</a></li>
+                    <li><a href=#>Unsuckit</a></li>
+                    <li><a href=#>Evening Edition</a></li>
+                </ul>
+            </nav>
+            <section class="follow">
+                <a href="#"></a>
+            </section>
+        </section>
+        <section class="copywrite">
+                <p>© 2014 Mule Design Studio and our clients.</p>
+        </section>
+    </div><!--/center wrapper-->
+</footer>
+    <!--    [if lte IE 8]>-->
+        <script src="js/respond.min.js"></script>
+    <!--<![endif]-->
+</body>
+</html>
